@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom"; //Links are just clever A tags
-import { Avatar } from "@material-ui/core"; //remember to put the IconButton here
+import { Avatar, IconButton } from "@material-ui/core"; //remember to put the IconButton here
 import AppsIcon from "@material-ui/icons/Apps";
 
 function Home() {
@@ -16,11 +16,18 @@ function Home() {
           <Link to="/gmail">Gmail</Link>
           <Link to="/images">Images</Link>
           <AppsIcon />
-          <Avatar />
+          <IconButton>
+            <Avatar />
+          </IconButton>
         </div>
       </div>
       {/* //Everything underneath is the body */}
-      <div className="home__body"></div>
+      <div className="home__body">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          alt=""
+        />
+      </div>
     </div>
   );
 }
