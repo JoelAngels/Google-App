@@ -3,6 +3,7 @@ import "./Home.css";
 import { Link } from "react-router-dom"; //Links are just clever A tags
 import { Avatar, IconButton } from "@material-ui/core"; //remember to put the IconButton here
 import AppsIcon from "@material-ui/icons/Apps";
+import Search from "./Search";
 
 function Home() {
   return (
@@ -27,6 +28,9 @@ function Home() {
           src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
           alt=""
         />
+        <div className="home__inputContainer">
+          <Search />
+        </div>
       </div>
     </div>
   );

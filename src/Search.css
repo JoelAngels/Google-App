@@ -1,0 +1,30 @@
+.search {
+}
+
+.search__input {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  width: 75vw; /* 75% of the screen width, when its responsive or not it will always take 75% width*/
+  margin: 0 auto; /*Trick that centers the whole thing */
+  margin-top: 40px;
+  max-width: 560px; /* It wont pass this size*/
+}
+
+.search__input > input {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: medium;
+  border: none;
+}
+
+.search__input > input:focus {
+  outline-width: 0; /* Removes the ugly border from the search bar in the onClick*/
+}
+
+.search__inputIcon {
+  color: gray;
+}
