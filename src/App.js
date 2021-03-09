@@ -1,10 +1,12 @@
 import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="app">
-      <h1>Building the Google App</h1>
-      <h1>Building the Google App</h1>
+      {/**Home (the one with search on => the entire page literally */}
+      <Home />
+      {/**Search Page (The results Page)*/}
     </div>
   );
 }
