@@ -66,3 +66,7 @@
 .search__language > p > span:hover {
   text-decoration: underline;
 }
+
+.search__buttonsHidden {
+  display: none !important;
+}
