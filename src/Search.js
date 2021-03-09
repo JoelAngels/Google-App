@@ -15,7 +15,6 @@ function Search({ hideButtons = false }) {
   const history = useHistory();
 
   const search = (e) => {
-    //mamashowtime
     e.preventDefault();
 
     console.log("Hi there, you hit the search button ", input);
