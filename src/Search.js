@@ -4,17 +4,27 @@ import SearchIcon from "@material-ui/icons/Search";
 import MicIcon from "@material-ui/icons/Mic";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
+import { actionTypes } from "./reducer";
 
 function Search({ hideButtons = false }) {
+  const [{}, dispatch] = useStateValue();
   // Checking and tracking the search input when typed
   const [input, setInput] = useState("");
   //   The history provides us with the browser history
   const history = useHistory();
 
   const search = (e) => {
+    //mamashowtime
     e.preventDefault();
 
     console.log("Hi there, you hit the search button ", input);
+
+    dispatch({
+      type: actionTypes.SET_SEARCH_TERM,
+      term: input,
+    });
+
     //when you hit the search button, push this page into your history of search and redirects it there
     history.push("/search");
   };
