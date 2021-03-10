@@ -29,7 +29,7 @@ function Home() {
           alt=""
         />
         <div className="home__inputContainer">
-          <Search hideButtons />
+          <Search hideButtons textHidden />
         </div>
       </div>
     </div>

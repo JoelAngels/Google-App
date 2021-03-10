@@ -70,3 +70,7 @@
 .search__buttonsHidden {
   display: none !important;
 }
+
+.search__languagetextHidden {
+  display: none !important;
+}

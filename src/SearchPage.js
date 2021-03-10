@@ -28,7 +28,12 @@ function SearchPage() {
         </Link>
 
         <div className="searchPage__headerBody ">
-          <Search hideButtons />
+          <Search hideButtons textHidden />
+
+          <div className="searchPage__options">
+            <div className="searchPage__right"></div>
+            <div className="searchPage__left"></div>
+          </div>
         </div>
       </div>
       <div className="searchPage__results "></div>

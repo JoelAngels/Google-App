@@ -7,7 +7,7 @@ import { useHistory } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer";
 
-function Search({ hideButtons = false }) {
+function Search({ hideButtons = false, textHidden = false }) {
   const [{}, dispatch] = useStateValue();
   // Checking and tracking the search input when typed
   const [input, setInput] = useState("");
@@ -35,7 +35,7 @@ function Search({ hideButtons = false }) {
         <MicIcon />
       </div>
       {/* if hideButton props is not passed use the normal layout */}
-      {!hideButtons ? (
+      {!hideButtons && textHidden ? (
         <>
           <div className="search__buttons">
             <Button type="submit" onClick={search} variant="outlined">
@@ -65,7 +65,7 @@ function Search({ hideButtons = false }) {
               I'm Feeling Lucky{" "}
             </Button>
           </div>
-          <div className="search__language">
+          <div className="search__languagetextHidden">
             <p>
               Google offered in: <span className="text-color"> English</span>
             </p>
