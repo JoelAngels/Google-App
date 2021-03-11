@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import API_KEY from "./keys";
 
 const CONTEXT_KEY = "424bf47822d1ae43b";

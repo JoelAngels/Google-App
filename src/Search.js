@@ -8,6 +8,7 @@ import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer";
 
 function Search({ hideButtons = false, textHidden = false }) {
+  // eslint-disable-next-line no-empty-pattern
   const [{}, dispatch] = useStateValue();
   // Checking and tracking the search input when typed
   const [input, setInput] = useState("");
@@ -35,7 +36,7 @@ function Search({ hideButtons = false, textHidden = false }) {
         <MicIcon />
       </div>
       {/* if hideButton props is not passed use the normal layout */}
-      {!hideButtons && textHidden ? (
+      {!hideButtons ? (
         <>
           <div className="search__buttons">
             <Button type="submit" onClick={search} variant="outlined">
@@ -62,7 +63,7 @@ function Search({ hideButtons = false, textHidden = false }) {
               Google Search
             </Button>
             <Button className="search__buttonsHidden" variant="outlined">
-              I'm Feeling Lucky{" "}
+              I'm Feeling Lucky
             </Button>
           </div>
           <div className="search__languagetextHidden">

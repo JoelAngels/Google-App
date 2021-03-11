@@ -2,7 +2,7 @@ import React from "react";
 import "./SearchPage.css";
 import { useStateValue } from "./StateProvider";
 import useGoogleSearch from "./useGoogleSearch";
-import response from "./response";
+// import response from "./response";
 import { Link } from "react-router-dom";
 import Search from "./Search";
 import SearchIcon from "@material-ui/icons/Search";
@@ -15,6 +15,7 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 function SearchPage() {
   //https://developers.google.com/custom-search/v1/using_rest
 
+  // eslint-disable-next-line no-unused-vars
   const [{ term }, dispatch] = useStateValue();
 
   //LIVE API CALL
@@ -92,6 +93,7 @@ function SearchPage() {
                       className="searchPage__resultImage"
                       src={item.pagemap?.cse_image[0]?.src}
                       alt=""
+                      key={data.id}
                     />
                   )}
 
