@@ -9,9 +9,43 @@ function Home() {
   return (
     <div className="home">
       <div className="home__header">
+        <div className="header__left">
+          <Link
+            to="/about"
+            target="_blank"
+            onClick={() => {
+              window.open("https://about.google/");
+            }}
+          >
+            About
+          </Link>
+          <Link
+            to="/store"
+            target="_blank"
+            onClick={() => {
+              window.open("https://store.google.com/");
+            }}
+          >
+            Store
+          </Link>
+        </div>
         <div className="home__headerRight">
-          <Link to="/gmail">Gmail</Link>
-          <Link to="/images">Images</Link>
+          <Link
+            to="/gmail"
+            onClick={() => {
+              window.open("https://clone-77e58.web.app/");
+            }}
+          >
+            Gmail
+          </Link>
+          <Link
+            to="/images"
+            onClick={() => {
+              window.open("https://www.google.com/imghp?hl=xx-elmer");
+            }}
+          >
+            Images
+          </Link>
           <IconButton>
             <AppsIcon />
           </IconButton>
