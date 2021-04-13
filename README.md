@@ -34,7 +34,7 @@ I built my own custom search engine that displayed the results on the search Pag
 
 #### Make sure Npm and Node is installed in your computer.
 
-- This project won't work on other computers because it uses an API to fetch data and the API KEYS are private
+- This project won't work on other computers because it uses an API to fetch data and the API KEYS are private but you can use the LIVE DEMO at the top
 
 [Back To The Top](#Google-Application)
 
